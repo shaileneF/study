@@ -1,1 +1,0 @@
-const e={key:"v-2d0aa62c",path:"/mw/",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"Elastic Search",slug:"elastic-search",children:[]}],git:{updatedTime:1669010326e3,contributors:[{name:"shailene",email:"64005626+shaileneF@users.noreply.github.com",commits:1}]},filePathRelative:"mw/README.md"};export{e as data};
