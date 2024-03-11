@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.45">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/icon/111.ico"><title>docker笔记 | shAilene</title><meta name="description" content="just be simple.">
+    <link rel="modulepreload" href="/study/assets/app.78a771da.js"><link rel="modulepreload" href="/study/assets/docker.html.5c55218d.js"><link rel="modulepreload" href="/study/assets/docker.html.0e4272b8.js"><link rel="prefetch" href="/study/assets/index.html.258e74f0.js"><link rel="prefetch" href="/study/assets/index.html.e50891e5.js"><link rel="prefetch" href="/study/assets/index.html.ab832a26.js"><link rel="prefetch" href="/study/assets/index.html.357aa5b1.js"><link rel="prefetch" href="/study/assets/index.html.578318f5.js"><link rel="prefetch" href="/study/assets/index.html.31e9fb19.js"><link rel="prefetch" href="/study/assets/index.html.7db66eef.js"><link rel="prefetch" href="/study/assets/设计模式1.html.d53dff3a.js"><link rel="prefetch" href="/study/assets/设计模式2.html.e3722ad6.js"><link rel="prefetch" href="/study/assets/gin.html.9433b284.js"><link rel="prefetch" href="/study/assets/golang.html.32a4031d.js"><link rel="prefetch" href="/study/assets/gorm.html.da14abf5.js"><link rel="prefetch" href="/study/assets/Javaweb.html.0e5f6840.js"><link rel="prefetch" href="/study/assets/ES.html.8d3d948e.js"><link rel="prefetch" href="/study/assets/vue基础.html.1c12e554.js"><link rel="prefetch" href="/study/assets/vue组件.html.377bad2f.js"><link rel="prefetch" href="/study/assets/一些知识点的记录.html.57839624.js"><link rel="prefetch" href="/study/assets/Java笔记.html.93b22492.js"><link rel="prefetch" href="/study/assets/dubbo.html.b1179982.js"><link rel="prefetch" href="/study/assets/springcloud（上）.html.37f37318.js"><link rel="prefetch" href="/study/assets/springcloud（下）.html.058bd46f.js"><link rel="prefetch" href="/study/assets/zookeeper.html.aedb29dc.js"><link rel="prefetch" href="/study/assets/《并发编程的艺术》笔记.html.cbc73593.js"><link rel="prefetch" href="/study/assets/并发编程.html.a1cc0df1.js"><link rel="prefetch" href="/study/assets/尚硅谷_宋红康_JDBC.html.3eab58bd.js"><link rel="prefetch" href="/study/assets/redis.html.230f8ca7.js"><link rel="prefetch" href="/study/assets/Mybatis.html.5dc80d50.js"><link rel="prefetch" href="/study/assets/spring.html.6ef4e156.js"><link rel="prefetch" href="/study/assets/springboot.html.6e17816e.js"><link rel="prefetch" href="/study/assets/springboot.html.71aa9f7c.js"><link rel="prefetch" href="/study/assets/springMVC.html.3493a9d1.js"><link rel="prefetch" href="/study/assets/kafka.html.7ceb4a26.js"><link rel="prefetch" href="/study/assets/RabbitMQ.html.cebd237c.js"><link rel="prefetch" href="/study/assets/操作系统.html.b9f1ea4a.js"><link rel="prefetch" href="/study/assets/flink基本篇1.html.3cdb72d4.js"><link rel="prefetch" href="/study/assets/flink基本篇2.html.165e9407.js"><link rel="prefetch" href="/study/assets/MySQL数据库笔记-第一部分.html.7b418914.js"><link rel="prefetch" href="/study/assets/MySQL数据库笔记-第二部分.html.cd5cfea6.js"><link rel="prefetch" href="/study/assets/404.html.93146c89.js"><link rel="prefetch" href="/study/assets/index.html.e9cc53c6.js"><link rel="prefetch" href="/study/assets/index.html.906d6e2b.js"><link rel="prefetch" href="/study/assets/index.html.6e49c8bb.js"><link rel="prefetch" href="/study/assets/index.html.656e57a1.js"><link rel="prefetch" href="/study/assets/index.html.627f6ffd.js"><link rel="prefetch" href="/study/assets/index.html.4915ee84.js"><link rel="prefetch" href="/study/assets/index.html.be19f4ad.js"><link rel="prefetch" href="/study/assets/设计模式1.html.36630715.js"><link rel="prefetch" href="/study/assets/设计模式2.html.24840805.js"><link rel="prefetch" href="/study/assets/gin.html.98b24cae.js"><link rel="prefetch" href="/study/assets/golang.html.36b6f3a6.js"><link rel="prefetch" href="/study/assets/gorm.html.8d9d41b6.js"><link rel="prefetch" href="/study/assets/Javaweb.html.00a31f6a.js"><link rel="prefetch" href="/study/assets/ES.html.c94652c9.js"><link rel="prefetch" href="/study/assets/vue基础.html.60f071c5.js"><link rel="prefetch" href="/study/assets/vue组件.html.8eef12ba.js"><link rel="prefetch" href="/study/assets/一些知识点的记录.html.7fd989c9.js"><link rel="prefetch" href="/study/assets/Java笔记.html.1182949a.js"><link rel="prefetch" href="/study/assets/dubbo.html.20ce8939.js"><link rel="prefetch" href="/study/assets/springcloud（上）.html.5264f00b.js"><link rel="prefetch" href="/study/assets/springcloud（下）.html.2973e1d5.js"><link rel="prefetch" href="/study/assets/zookeeper.html.7b2362be.js"><link rel="prefetch" href="/study/assets/《并发编程的艺术》笔记.html.d2f7179c.js"><link rel="prefetch" href="/study/assets/并发编程.html.2a2277ce.js"><link rel="prefetch" href="/study/assets/尚硅谷_宋红康_JDBC.html.922a24d2.js"><link rel="prefetch" href="/study/assets/redis.html.a39750b3.js"><link rel="prefetch" href="/study/assets/Mybatis.html.aad45db6.js"><link rel="prefetch" href="/study/assets/spring.html.50a8086f.js"><link rel="prefetch" href="/study/assets/springboot.html.b2d607da.js"><link rel="prefetch" href="/study/assets/springboot.html.46388fc0.js"><link rel="prefetch" href="/study/assets/springMVC.html.40174351.js"><link rel="prefetch" href="/study/assets/kafka.html.94c71a62.js"><link rel="prefetch" href="/study/assets/RabbitMQ.html.5ff58560.js"><link rel="prefetch" href="/study/assets/操作系统.html.a979e13f.js"><link rel="prefetch" href="/study/assets/flink基本篇1.html.bedeb4c1.js"><link rel="prefetch" href="/study/assets/flink基本篇2.html.7ce4e99c.js"><link rel="prefetch" href="/study/assets/MySQL数据库笔记-第一部分.html.f287a603.js"><link rel="prefetch" href="/study/assets/MySQL数据库笔记-第二部分.html.34dc8b9e.js"><link rel="prefetch" href="/study/assets/404.html.960d6217.js"><link rel="prefetch" href="/study/assets/404.1977e9f9.js"><link rel="prefetch" href="/study/assets/Layout.1cbc6fb5.js">
+    <link rel="stylesheet" href="/study/assets/style.2bba04cf.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/study/" class=""><img class="logo" src="/study/images/leo.jpg" alt="shAilene"><span class="site-name can-hide">shAilene</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/study/计算机基础/" class="" aria-label="计算机基础"><!--[--><!--]--> 计算机基础 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/study/java/" class="" aria-label="Java"><!--[--><!--]--> Java <!--[--><!--]--></a></div><div class="navbar-item"><a href="/study/go/" class="" aria-label="Go"><!--[--><!--]--> Go <!--[--><!--]--></a></div><div class="navbar-item"><a href="/study/python/" class="" aria-label="Python"><!--[--><!--]--> Python <!--[--><!--]--></a></div><div class="navbar-item"><a href="/study/mw/" class="router-link-active" aria-label="中间件"><!--[--><!--]--> 中间件 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/study/Design-patterns/" class="" aria-label="设计模式"><!--[--><!--]--> 设计模式 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/study/前端/" class="" aria-label="前端"><!--[--><!--]--> 前端 <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button" title="toggle dark mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/study/计算机基础/" class="" aria-label="计算机基础"><!--[--><!--]--> 计算机基础 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/study/java/" class="" aria-label="Java"><!--[--><!--]--> Java <!--[--><!--]--></a></div><div class="navbar-item"><a href="/study/go/" class="" aria-label="Go"><!--[--><!--]--> Go <!--[--><!--]--></a></div><div class="navbar-item"><a href="/study/python/" class="" aria-label="Python"><!--[--><!--]--> Python <!--[--><!--]--></a></div><div class="navbar-item"><a href="/study/mw/" class="router-link-active" aria-label="中间件"><!--[--><!--]--> 中间件 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/study/Design-patterns/" class="" aria-label="设计模式"><!--[--><!--]--> 设计模式 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/study/前端/" class="" aria-label="前端"><!--[--><!--]--> 前端 <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading">docker笔记 <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/study/mw/docker/docker.html#简介" class="router-link-active router-link-exact-active sidebar-item" aria-label="简介"><!--[--><!--]--> 简介 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/study/mw/docker/docker.html#镜像" class="router-link-active router-link-exact-active sidebar-item" aria-label="镜像"><!--[--><!--]--> 镜像 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/study/mw/docker/docker.html#容器" class="router-link-active router-link-exact-active sidebar-item" aria-label="容器"><!--[--><!--]--> 容器 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/study/mw/docker/docker.html#仓库" class="router-link-active router-link-exact-active sidebar-item" aria-label="仓库"><!--[--><!--]--> 仓库 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/study/mw/docker/docker.html#docker的工作流程" class="router-link-active router-link-exact-active sidebar-item" aria-label="docker的工作流程"><!--[--><!--]--> docker的工作流程 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a aria-current="page" href="/study/mw/docker/docker.html#安装docker" class="router-link-active router-link-exact-active sidebar-item" aria-label="安装docker"><!--[--><!--]--> 安装docker <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/study/mw/docker/docker.html#centos" class="router-link-active router-link-exact-active sidebar-item" aria-label="centos"><!--[--><!--]--> centos <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a aria-current="page" href="/study/mw/docker/docker.html#使用镜像" class="router-link-active router-link-exact-active sidebar-item" aria-label="使用镜像"><!--[--><!--]--> 使用镜像 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/study/mw/docker/docker.html#获取镜像" class="router-link-active router-link-exact-active sidebar-item" aria-label="获取镜像"><!--[--><!--]--> 获取镜像 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/study/mw/docker/docker.html#启动容器" class="router-link-active router-link-exact-active sidebar-item" aria-label="启动容器"><!--[--><!--]--> 启动容器 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/study/mw/docker/docker.html#列出镜像" class="router-link-active router-link-exact-active sidebar-item" aria-label="列出镜像"><!--[--><!--]--> 列出镜像 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/study/mw/docker/docker.html#中间层镜像" class="router-link-active router-link-exact-active sidebar-item" aria-label="中间层镜像"><!--[--><!--]--> 中间层镜像 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/study/mw/docker/docker.html#commit" class="router-link-active router-link-exact-active sidebar-item" aria-label="commit"><!--[--><!--]--> commit <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/study/mw/docker/docker.html#dockerfile" class="router-link-active router-link-exact-active sidebar-item" aria-label="Dockerfile"><!--[--><!--]--> Dockerfile <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a aria-current="page" href="/study/mw/docker/docker.html#操作容器" class="router-link-active router-link-exact-active sidebar-item" aria-label="操作容器"><!--[--><!--]--> 操作容器 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/study/mw/docker/docker.html#启动容器-1" class="router-link-active router-link-exact-active sidebar-item" aria-label="启动容器"><!--[--><!--]--> 启动容器 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/study/mw/docker/docker.html#终止容器" class="router-link-active router-link-exact-active sidebar-item" aria-label="终止容器"><!--[--><!--]--> 终止容器 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/study/mw/docker/docker.html#进入容器" class="router-link-active router-link-exact-active sidebar-item" aria-label="进入容器"><!--[--><!--]--> 进入容器 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/study/mw/docker/docker.html#删除容器" class="router-link-active router-link-exact-active sidebar-item" aria-label="删除容器"><!--[--><!--]--> 删除容器 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a aria-current="page" href="/study/mw/docker/docker.html#docker-compose" class="router-link-active router-link-exact-active sidebar-item" aria-label="docker-compose"><!--[--><!--]--> docker-compose <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><h1 id="docker笔记" tabindex="-1"><a class="header-anchor" href="#docker笔记" aria-hidden="true">#</a> docker笔记</h1><h2 id="简介" tabindex="-1"><a class="header-anchor" href="#简介" aria-hidden="true">#</a> 简介</h2><p>docker是一种属于操作系统层面的虚拟化技术，可理解为软件层面，不需要硬件虚拟，由于隔离的进程独立于宿主和其他隔离的进程，因此也称为容器。</p><p>容器是一种通用技术，docker是一种实现。</p><p>两个核心技术：</p><ul><li>基于操作系统cgroup和namespace创建出的互相隔离的沙盒，程序（包括编译好的可执行程序、启动脚本、配置等放在这里面），每个进程都放在各自的沙盒中，互相隔离，这些沙盒可理解为容器。</li><li>docker的镜像技术。</li></ul><p>docker是一个用Go语言实现的开源项目，可以让我们方便地创建和使用容器。</p><p>docker将程序以及程序运行所需要的依赖，也就是运行时环境都打包到docker container。不同的容器都使用同一个操作系统，不用像虚拟机一样从操作系统层面进行虚拟化，这样代价大，消耗资源多，启动慢，而容器在同一个操作系统基础之上，通过打包不同的运行时环境，这样使用的资源就小很多。</p><p>这样程序在任何环境都会有一致的表现，这里程序运行时环境（依赖）也就是容器就好比集装箱，容器所处的操作系统环境就好比货船和港口，不同的容器（不同的进程）他们是使用的同一个操作系统，程序的表现只和集装箱，也就是运行时环境有关系。docker可以屏蔽环境差异，只要程序打包到了docker中，那么无论运行在什么环境下程序的行为都是一致的。</p><p>镜像是静态，容器是动态，镜像可理解为可执行程序，容器就是运行起来的进程。</p><p>docker的另一个好处是快速部署，一个原因在于容器启动速度快，另一个原因在于只要确保一个容器中的程序正确运行，那么你就能确信无论在生产环境部署多少都能正确运行，只要通过docker。因为通过dockerfile构建好了镜像，就相当于有了程序运行的一个完整的运行时环境。</p><h3 id="镜像" tabindex="-1"><a class="header-anchor" href="#镜像" aria-hidden="true">#</a> 镜像</h3><p>操作系统分为内核和用户空间。对于Linux而言，内核启动后，会挂载 root 文件系统为其提供用户空间支持。而 Docker镜像（Image），就相当于是一个 root 文件系统。</p><p>Docker镜像是一个特殊的文件系统，除了提供容器运行时所需的程序、库、资源、配置等文件外，还包含了一些为运行时准备的一些配置参数（如匿名卷、环境变量、用户等）。镜像不包含任何动态数据，其内容在构建之后也不会被改变。</p><p>写image需要dockerfile，dockerfile就是image的源代码，docker就是&quot;编译器&quot;。</p><p>因此我们只需要在dockerfile中指定需要哪些程序、依赖什么样的配置，之后把dockerfile交给“编译器”docker进行“编译”，也就是docker build命令，生成的可执行程序就是image。容器是基于镜像的。镜像创建好了，也就是可执行程序（跟源码build出的二进制可执行程序概念不同，golang是二进制，Java则是jar包）创建好了，之后就可以运行这个image了，这就是docker run命令。</p><p>也可以把镜像和容器比作是类和实例对象的关系。</p><p>一定不要把镜像只是理解为可执行程序、静态文件，它包括了静态文件、可执行程序、配置还有各种依赖，基础环境，是一个完整的运行时环境，静态只是相对于容器而言，是静态的定义，“可执行程序”的类比也只是相对于容器而言。docker镜像是创建docker容器的模板。容器是docker镜像运行起来的实体。</p><p>image运行起来之后就是docker container。</p><h3 id="容器" tabindex="-1"><a class="header-anchor" href="#容器" aria-hidden="true">#</a> 容器</h3><p>镜像（Image）和容器（Container）的关系，就像是面向对象程序设计中的 类 和 实例 一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。镜像虽是静态的，但是提供了程序所依赖的完整的运行时环境。</p><p>容器的实质是进程，但与直接在宿主执行的进程不同，容器进程运行于属于自己的独立的 命名空间。因此容器可以拥有自己的 root 文件系统、自己的网络配置、自己的进程空间，甚至自己的用户 ID 空间。容器内的进程是运行在一个隔离的环境里，使用起来，就好像是在一个独立于宿主的系统下操作一样，这就是运行时环境，这个运行时环境独立于宿主的操作系统，所以才能在开发、测试、预发、生产等环境上有相同的运行结果。</p><p>每一个容器运行时，是以镜像为基础层，在其上创建一个当前容器的存储层，我们可以称这个为容器运行时读写而准备的存储层为 容器存储层。</p><p>容器存储层的生存周期和容器一样，容器消亡时，容器存储层也随之消亡。因此，任何保存于容器存储层的信息都会随容器删除而丢失。</p><p>按照 Docker 最佳实践的要求，容器不应该向其存储层内写入任何数据，容器存储层要保持无状态化。所有的文件写入操作，都应该使用数据卷（Volume）、或者绑定宿主目录，在这些位置的读写会跳过容器存储层，直接对宿主（或网络存储）发生读写，其性能和稳定性更高。</p><p>数据卷的生存周期独立于容器，容器消亡，数据卷不会消亡。因此，使用数据卷后，容器删除或者重新运行之后，数据却不会丢失。</p><h3 id="仓库" tabindex="-1"><a class="header-anchor" href="#仓库" aria-hidden="true">#</a> 仓库</h3><p>仓库可看成一个代码控制中心，用来保存镜像。</p><p><img src="/study/assets/image-20231222170905915.cf69f1f0.png" alt="image-20231222170905915"></p><h3 id="docker的工作流程" tabindex="-1"><a class="header-anchor" href="#docker的工作流程" aria-hidden="true">#</a> docker的工作流程</h3><ol><li><p>docker build</p><p>当我们写完dockerfile交给docker“编译”时使用docker build这个命令，那么client转发这个命令给docker daemon，接着docker daemon根据dockerfile创建出“可执行程序”image。</p></li><li><p>docker run</p><p>有了可执行程序image之后就可以运行程序了，接下来使用命令docker run，docker daemon接收到该命令之后找到具体的image，然后加载到内存开始运行，image执行起来了就是所谓的container。每一个容器运行时，是以镜像为基础层，在其上创建一个当前容器的存储层，我们可以称这个为容器运行时读写而准备的存储层为<strong>容器存储层</strong>。</p></li><li><p>docker pull</p><p>其实docker build和docker run是两个最核心的命令，会用这两个命令基本上docker就可以用起来了，剩下的就是一些补充。</p><p>docker中image的概念类似于“可执行程序”，我们可以从哪里下载到别人写好的应用程序呢?很简单，那就是APP Store，即应用商店。与之类似，既然image也是一种“可执行程序”，那么有没有&quot;Docker Image Store&quot;呢?答案是肯定的，这就是Docker Hub，docker官方的“应用商店”，你可以在这里下载到别人编写好的image，这样你就不用自己编写dockerfile了。</p></li></ol><h2 id="安装docker" tabindex="-1"><a class="header-anchor" href="#安装docker" aria-hidden="true">#</a> 安装docker</h2><h3 id="centos" tabindex="-1"><a class="header-anchor" href="#centos" aria-hidden="true">#</a> centos</h3><ol><li><p>卸载旧版本</p><div class="language-bash ext-sh"><pre class="language-bash"><code>$ <span class="token function">sudo</span> yum remove <span class="token function">docker</span> <span class="token punctuation">\</span>
+                  docker-client <span class="token punctuation">\</span>
+                  docker-client-latest <span class="token punctuation">\</span>
+                  docker-common <span class="token punctuation">\</span>
+                  docker-latest <span class="token punctuation">\</span>
+                  docker-latest-logrotate <span class="token punctuation">\</span>
+                  docker-logrotate <span class="token punctuation">\</span>
+                  docker-selinux <span class="token punctuation">\</span>
+                  docker-engine-selinux <span class="token punctuation">\</span>
+                  docker-engine
+</code></pre></div></li><li><p>yum安装(https://yeasy.gitbook.io/docker_practice/install/centos)</p><p>安装依赖包</p><div class="language-text ext-text"><pre class="language-text"><code>$ sudo yum install -y yum-utils
+</code></pre></div><p>如要添加国内源</p><div class="language-text ext-text"><pre class="language-text"><code>$ sudo yum-config-manager \
+    --add-repo \
+    https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+
+$ sudo sed -i &#39;s/download.docker.com/mirrors.aliyun.com\/docker-ce/g&#39; /etc/yum.repos.d/docker-ce.repo
+
+# 官方源
+# $ sudo yum-config-manager \
+#     --add-repo \
+#     https://download.docker.com/linux/centos/docker-ce.repo
+</code></pre></div><p>安装docker</p><div class="language-text ext-text"><pre class="language-text"><code>$ sudo yum install docker-ce docker-ce-cli containerd.io
+</code></pre></div><p>启动docker</p><div class="language-text ext-text"><pre class="language-text"><code>$ sudo systemctl enable docker
+$ sudo systemctl start docker
+</code></pre></div><p>测试docker是否安装正确</p><div class="language-text ext-text"><pre class="language-text"><code>$ docker run --rm hello-world
+
+Unable to find image &#39;hello-world:latest&#39; locally
+latest: Pulling from library/hello-world
+b8dfde127a29: Pull complete
+Digest: sha256:308866a43596e83578c7dfa15e27a73011bdd402185a84c5cd7f32a88b501a24
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the &quot;hello-world&quot; image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+</code></pre></div></li></ol><h2 id="使用镜像" tabindex="-1"><a class="header-anchor" href="#使用镜像" aria-hidden="true">#</a> 使用镜像</h2><h3 id="获取镜像" tabindex="-1"><a class="header-anchor" href="#获取镜像" aria-hidden="true">#</a> 获取镜像</h3><div class="language-text ext-text"><pre class="language-text"><code>$ docker pull [选项] [Docker Registry 地址[:端口号]/]仓库名[:标签]
+</code></pre></div><div class="language-text ext-text"><pre class="language-text"><code>$ docker pull ubuntu:18.04
+18.04: Pulling from library/ubuntu
+92dc2a97ff99: Pull complete
+be13a9d27eb8: Pull complete
+c8299583700a: Pull complete
+Digest: sha256:4bc3ae6596938cb0d9e5ac51a1152ec9dcac2a1c50829c74abd9c4361e321b26
+Status: Downloaded newer image for ubuntu:18.04
+docker.io/library/ubuntu:18.04
+</code></pre></div><h3 id="启动容器" tabindex="-1"><a class="header-anchor" href="#启动容器" aria-hidden="true">#</a> 启动容器</h3><div class="language-text ext-text"><pre class="language-text"><code>$ docker run -it --rm ubuntu:18.04 bash
+
+root@e7009c6ce357:/# cat /etc/os-release
+NAME=&quot;Ubuntu&quot;
+VERSION=&quot;18.04.1 LTS (Bionic Beaver)&quot;
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME=&quot;Ubuntu 18.04.1 LTS&quot;
+VERSION_ID=&quot;18.04&quot;
+HOME_URL=&quot;https://www.ubuntu.com/&quot;
+SUPPORT_URL=&quot;https://help.ubuntu.com/&quot;
+BUG_REPORT_URL=&quot;https://bugs.launchpad.net/ubuntu/&quot;
+PRIVACY_POLICY_URL=&quot;https://www.ubuntu.com/legal/terms-and-policies/privacy-policy&quot;
+VERSION_CODENAME=bionic
+UBUNTU_CODENAME=bionic
+</code></pre></div><ul><li>-it：这是两个参数，一个是 -i：交互式操作，一个是 -t 终端。我们这里打算进入 bash 执行一些命令并查看返回结果，因此我们需要交互式终端。</li><li>--rm：这个参数是说容器退出后随之将其删除。默认情况下，为了排障需求，退出的容器并不会立即删除，除非手动 docker rm。我们这里只是随便执行个命令，看看结果，不需要排障和保留结果，因此使用 --rm 可以避免浪费空间。</li><li>ubuntu:18.04：这是指用 ubuntu:18.04 镜像为基础来启动容器。</li><li>bash：放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 bash。</li></ul><h3 id="列出镜像" tabindex="-1"><a class="header-anchor" href="#列出镜像" aria-hidden="true">#</a> 列出镜像</h3><p>https://yeasy.gitbook.io/docker_practice/image/list</p><div class="language-text ext-text"><pre class="language-text"><code>$ docker image ls
+REPOSITORY           TAG                 IMAGE ID            CREATED             SIZE
+redis                latest              5f515359c7f8        5 days ago          183 MB
+nginx                latest              05a60462f8ba        5 days ago          181 MB
+mongo                3.2                 fe9198c04d62        5 days ago          342 MB
+&lt;none&gt;               &lt;none&gt;              00285df0df87        5 days ago          342 MB
+ubuntu               18.04               329ed837d508        3 days ago          63.3MB
+ubuntu               bionic              329ed837d508        3 days ago          63.3MB
+</code></pre></div><h3 id="中间层镜像" tabindex="-1"><a class="header-anchor" href="#中间层镜像" aria-hidden="true">#</a> 中间层镜像</h3><p>为了加速镜像构建、重复利用资源，Docker 会利用 <strong>中间层镜像</strong>。所以在使用一段时间后，可能会看到一些依赖的中间层镜像。默认的 <code>docker image ls</code> 列表中只会显示顶层镜像，如果希望显示包括中间层镜像在内的所有镜像的话，需要加 <code>-a</code> 参数。</p><div class="language-text ext-text"><pre class="language-text"><code>$ docker image ls -a
+</code></pre></div><p>这样会看到很多无标签的镜像，与之前的虚悬镜像不同，这些无标签的镜像很多都是中间层镜像，是其它镜像所依赖的镜像。这些无标签镜像不应该删除，否则会导致上层镜像因为依赖丢失而出错。实际上，这些镜像也没必要删除，因为之前说过，相同的层只会存一遍，而这些镜像是别的镜像的依赖，因此并不会因为它们被列出来而多存了一份，无论如何你也会需要它们。只要删除那些依赖它们的镜像后，这些依赖的中间层镜像也会被连带删除。</p><h3 id="commit" tabindex="-1"><a class="header-anchor" href="#commit" aria-hidden="true">#</a> commit</h3><p>镜像是容器的基础，每次执行 <code>docker run</code> 的时候都会指定哪个镜像作为容器运行的基础。</p><p>镜像是多层存储，每一层是在前一层的基础上进行的修改；而容器同样也是多层存储，是在以镜像为基础层，在其基础上加一层作为容器运行时的存储层。</p><p>当我们运行一个容器的时候（如果不使用卷的话），我们做的任何文件修改都会被记录于容器存储层里。而Docker提供了一个 <code>docker commit</code> 命令，可以将容器的存储层保存下来成为镜像。换句话说，就是在原有镜像的基础上，再叠加上容器的存储层，并构成新的镜像。以后我们运行这个新镜像的时候，就会拥有原有容器最后的文件变化。</p><p>此外，使用 <code>docker commit</code> 意味着所有对镜像的操作都是黑箱操作，生成的镜像也被称为<strong>黑箱镜像</strong>。</p><p>而且，回顾之前提及的镜像所使用的分层存储的概念，除当前层外，之前的每一层都是不会发生改变的，换句话说，任何修改的结果仅仅是在当前层进行标记、添加、修改，而不会改动上一层。如果使用 <code>docker commit</code> 制作镜像，以及后期修改的话，每一次修改都会让镜像更加臃肿一次，所删除的上一层的东西并不会丢失，会一直如影随形的跟着这个镜像，即使根本无法访问到。这会让镜像更加臃肿。</p><h3 id="dockerfile" tabindex="-1"><a class="header-anchor" href="#dockerfile" aria-hidden="true">#</a> Dockerfile</h3><p>使用dockerfile定制镜像</p><p><strong>From指定基础镜像</strong></p><p>所谓定制镜像，那一定是以一个镜像为基础，在其上进行定制。就像我们之前运行了一个 nginx 镜像的容器，再进行修改一样，基础镜像是必须指定的。而 FROM 就是指定基础镜像，因此一个 Dockerfile 中 FROM 是必备的指令，并且必须是第一条指令。</p><p>在Docker Hub上有非常多的高质量的官方镜像，有可以直接拿来使用的服务类的镜像，如nginx、redis、mongo、mysql、httpd、php、tomcat等；也有一些方便开发、构建、运行各种语言应用的镜像，如 node、openjdk、python、ruby、golang等。可以在其中寻找一个最符合我们最终目标的镜像为基础镜像进行定制。</p><p>除了选择现有镜像为基础镜像外，Docker 还存在一个特殊的镜像，名为 scratch。这个镜像是虚拟的概念，并不实际存在，它表示一个空白的镜像。</p><div class="language-docker ext-docker"><pre class="language-docker"><code><span class="token instruction"><span class="token keyword">FROM</span> scratch</span>
+...
+</code></pre></div><p>如果以scratch为基础镜像的话，意味着你不以任何镜像为基础，接下来所写的指令将作为镜像第一层开始存在。</p><p>不以任何系统为基础，直接将可执行文件复制进镜像的做法并不罕见，对于Linux下静态编译的程序来说，并不需要有操作系统提供运行时支持，所需的一切库都已经在可执行文件里了，因此直接 FROM scratch 会让镜像体积更加小巧。使用 Go 语言开发的应用很多会使用这种方式来制作镜像，这也是为什么有人认为 Go 是特别适合容器微服务架构的语言的原因之一。</p><div class="language-text ext-text"><pre class="language-text"><code>FROM debian:stretch
+
+RUN apt-get update
+RUN apt-get install -y gcc libc6-dev make wget
+RUN wget -O redis.tar.gz &quot;http://download.redis.io/releases/redis-5.0.3.tar.gz&quot;
+RUN mkdir -p /usr/src/redis
+RUN tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1
+RUN make -C /usr/src/redis
+RUN make -C /usr/src/redis install
+</code></pre></div><p>之前说过，Dockerfile 中每一个指令都会建立一层，<code>RUN</code> 也不例外。每一个 <code>RUN</code> 的行为，就和刚才我们手工建立镜像的过程一样：新建立一层，在其上执行这些命令，执行结束后，<code>commit</code> 这一层的修改，构成新的镜像。</p><p>而上面的这种写法，创建了 7 层镜像。这是完全没有意义的，而且很多运行时不需要的东西，都被装进了镜像里，比如编译环境、更新的软件包等等。结果就是产生非常臃肿、非常多层的镜像，不仅仅增加了构建部署的时间，也很容易出错。 这是很多初学 Docker 的人常犯的一个错误。</p><p>上面的 <code>Dockerfile</code> 正确的写法应该是这样：</p><div class="language-docker ext-docker"><pre class="language-docker"><code><span class="token instruction"><span class="token keyword">FROM</span> debian:stretch</span>
+
+<span class="token instruction"><span class="token keyword">RUN</span> set -x; buildDeps=<span class="token string">&#39;gcc libc6-dev make wget&#39;</span> <span class="token operator">\</span>
+    &amp;&amp; apt-get update <span class="token operator">\</span>
+    &amp;&amp; apt-get install -y <span class="token variable">$buildDeps</span> <span class="token operator">\</span>
+    &amp;&amp; wget -O redis.tar.gz <span class="token string">&quot;http://download.redis.io/releases/redis-5.0.3.tar.gz&quot;</span> <span class="token operator">\</span>
+    &amp;&amp; mkdir -p /usr/src/redis <span class="token operator">\</span>
+    &amp;&amp; tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1 <span class="token operator">\</span>
+    &amp;&amp; make -C /usr/src/redis <span class="token operator">\</span>
+    &amp;&amp; make -C /usr/src/redis install <span class="token operator">\</span>
+    &amp;&amp; rm -rf /var/lib/apt/lists/* <span class="token operator">\</span>
+    &amp;&amp; rm redis.tar.gz <span class="token operator">\</span>
+    &amp;&amp; rm -r /usr/src/redis <span class="token operator">\</span>
+    &amp;&amp; apt-get purge -y --auto-remove <span class="token variable">$buildDeps</span></span>
+
+</code></pre></div><p><strong>在撰写Dockerfile的时候，要经常提醒自己，这并不是在写Shell脚本，而是在定义每一层该如何构建。</strong></p><h2 id="操作容器" tabindex="-1"><a class="header-anchor" href="#操作容器" aria-hidden="true">#</a> 操作容器</h2><h3 id="启动容器-1" tabindex="-1"><a class="header-anchor" href="#启动容器-1" aria-hidden="true">#</a> 启动容器</h3><p>https://vuepress.mirror.docker-practice.com/container/run/#</p><p>-d参数只是指定容器在后台运行</p><p>容器是否会长久运行，是和 <code>docker run</code> 指定的命令有关，和 <code>-d</code> 参数无关。</p><h3 id="终止容器" tabindex="-1"><a class="header-anchor" href="#终止容器" aria-hidden="true">#</a> 终止容器</h3><p>https://vuepress.mirror.docker-practice.com/container/stop/</p><h3 id="进入容器" tabindex="-1"><a class="header-anchor" href="#进入容器" aria-hidden="true">#</a> 进入容器</h3><div class="language-text ext-text"><pre class="language-text"><code>$ docker run -dit ubuntu
+69d137adef7a8a689cbcb059e94da5489d3cddd240ff675c640c8d96e84fe1f6
+
+$ docker container ls
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+69d137adef7a        ubuntu:latest       &quot;/bin/bash&quot;         18 seconds ago      Up 17 seconds                           zealous_swirles
+
+$ docker exec -i 69d1 bash
+ls
+bin
+boot
+dev
+...
+
+$ docker exec -it 69d1 bash
+root@69d137adef7a:/#
+
+</code></pre></div><h3 id="删除容器" tabindex="-1"><a class="header-anchor" href="#删除容器" aria-hidden="true">#</a> 删除容器</h3><p>可以使用 <code>docker container rm</code> 来删除一个处于终止状态的容器。例如</p><div class="language-bash ext-sh"><pre class="language-bash"><code>$ <span class="token function">docker</span> container <span class="token function">rm</span> trusting_newton
+trusting_newton
+</code></pre></div><p>如果要删除一个运行中的容器，可以添加 <code>-f</code> 参数。Docker 会发送 <code>SIGKILL</code> 信号给容器。</p><p>清理所有处于终止状态的容器</p><p>用 <code>docker container ls -a</code> 命令可以查看所有已经创建的包括终止状态的容器，如果数量太多要一个个删除可能会很麻烦，用下面的命令可以清理掉所有处于终止状态的容器。</p><div class="language-bash ext-sh"><pre class="language-bash"><code>$ <span class="token function">docker</span> container prune
+</code></pre></div><h2 id="docker-compose" tabindex="-1"><a class="header-anchor" href="#docker-compose" aria-hidden="true">#</a> docker-compose</h2><p>Compose定位是「定义和运行多个 Docker 容器的应用（Defining and running multi-container Docker applications）」</p><p>在日常工作中，经常会碰到需要多个容器相互配合来完成某项任务的情况。例如要实现一个 Web 项目，除了 Web 服务容器本身，往往还需要再加上后端的数据库服务容器，甚至还包括负载均衡容器等。</p><p>Compose恰好满足了这样的需求。它允许用户通过一个单独的docker-compose.yml模板文件（YAML格式）来定义一组相关联的应用容器为一个项目（project）。</p><p>Compose 中有两个重要的概念：</p><ul><li>服务(service)：一个应用的容器，实际上可以包括若干运行相同镜像的容器实例。</li><li>项目(project)：由一组关联的应用容器组成的一个完整业务单元，在docker-compose.yml文件中定义。</li></ul><p>一个项目可以由多个服务（容器）关联而成，Compose 面向项目进行管理。</p><p>对于 Compose 来说，大部分命令的对象既可以是项目本身，也可以指定为项目中的服务或者容器。如果没有特别的说明，命令对象将是项目，这意味着项目中所有的服务都会受到命令影响。</p><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 64005626+shaileneF@users.noreply.github.com">shailene</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/study/assets/app.78a771da.js" defer></script>
+  </body>
+</html>
