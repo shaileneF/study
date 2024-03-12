@@ -1,0 +1,1 @@
+const e={key:"v-8daa1a0e",path:"/",title:"",lang:"zh-CN",frontmatter:{home:!0,heroImage:"/images/shailene.jpg",actions:[{text:"Get Start.",link:"/java",type:"primary"}],footer:"\u{1F4A9}"},excerpt:"",headers:[],git:{updatedTime:1710266658e3,contributors:[{name:"\u9648\u6768",email:"chenyang@192.168.0.104",commits:1}]},filePathRelative:"README.md"};export{e as data};
