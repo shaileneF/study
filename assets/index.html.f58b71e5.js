@@ -1,1 +1,0 @@
-const e={key:"v-63cd5dba",path:"/python/",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"python\u7B14\u8BB0",slug:"python\u7B14\u8BB0",children:[]}],git:{updatedTime:1710265463e3,contributors:[{name:"shailene",email:"64005626+shaileneF@users.noreply.github.com",commits:1}]},filePathRelative:"python/README.md"};export{e as data};
